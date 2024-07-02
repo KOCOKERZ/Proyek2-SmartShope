@@ -151,7 +151,7 @@ function Navbar() {
 
                 {/* Search */}
                 <div className="flex lg:ml-6">
-                  <button className='' onClick={toggleMode}>
+                  <button id="dark_mode" className='' onClick={toggleMode}>
                     {/* <MdDarkMode size={35} style={{ color: mode === 'dark' ? 'white' : '' }} /> */}
                     {mode === 'light' ?
                       (<FiSun className='' size={30} />
