@@ -61,14 +61,14 @@ function DashboardTab() {
                                 </div>
                             </div>
                                 <div className=" flex justify-end">
-                                    <button onClick={add} type="button" className="focus:outline-none text-white bg-yellow-600 shadow-[inset_0_0_10px_rgba(0,0,0,0.6)] border hover:bg-yellow-700 outline-0 font-medium rounded-lg text-sm px-5 py-2.5 mb-2" style={{ backgroundColor: mode === 'dark' ? 'rgb(46 49 55)' : '', color: mode === 'dark' ? 'white' : '', }} > 
+                                    <button id='addproducthref' onClick={add} type="button" className="focus:outline-none text-white bg-yellow-600 shadow-[inset_0_0_10px_rgba(0,0,0,0.6)] border hover:bg-yellow-700 outline-0 font-medium rounded-lg text-sm px-5 py-2.5 mb-2" style={{ backgroundColor: mode === 'dark' ? 'rgb(46 49 55)' : '', color: mode === 'dark' ? 'white' : '', }} > 
                                         <div className="flex gap-2 items-center">
                                             Add Product <FaCartPlus size={20} />
                                         </div>
                                     </button>
                                 </div>
                                 <div className="relative overflow-x-auto ">
-                                    <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400  ">
+                                    <table id='allproduct' className="w-full text-sm text-left text-gray-500 dark:text-gray-400  ">
                                         <thead className="text-xs border border-gray-600 text-black uppercase bg-gray-200 shadow-[inset_0_0_8px_rgba(0,0,0,0.6)]" style={{ backgroundColor: mode === 'dark' ? 'rgb(46 49 55)' : '', color: mode === 'dark' ? 'white' : '', }} >
                                             <tr>
                                                 <th scope="col" className="px-6 py-3">
@@ -161,7 +161,7 @@ function DashboardTab() {
                                 <br /><br />
                                  
                                  {order.map((allorder, index)=> {
-                                    return(<table className="w-full text-sm text-left text-gray-500 dark:text-gray-400"  >
+                                    return(<table id='allorder' className="w-full text-sm text-left text-gray-500 dark:text-gray-400"  >
                                     <thead  className="text-xs border border-gray-600 text-black uppercase bg-gray-200 " style={{ backgroundColor: mode === 'dark' ? 'rgb(46 49 55)' : '', color: mode === 'dark' ? 'white' : '', }} >
                                         <tr>
                                             <th scope="col" className="px-6 py-3">
@@ -252,7 +252,7 @@ function DashboardTab() {
 
                                 <br /><br />
 
-                                <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                                <table id='alluser' className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                                     <thead className="text-xs border border-gray-600 text-black uppercase bg-gray-200 " style={{ backgroundColor: mode === 'dark' ? 'rgb(46 49 55)' : '', color: mode === 'dark' ? 'white' : '', }} >
                                         <tr>
                                             <th scope="col" className="px-6 py-3">
